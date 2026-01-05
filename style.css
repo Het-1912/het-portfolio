@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url("https://images.unsplash.com/photo-1517433456452-f9633a875f6f") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+/* Sections */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+}
+
+.dark {
+  background: #111;
+}
+
+/* About */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills span {
+  border: 1px solid #444;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Project */
+.project-card {
+  max-width: 600px;
+  margin: auto;
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.2s forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
